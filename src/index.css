@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'MrsSaintDelafield';
+  src: local('MrsSaintDelafield'), url(./fonts/MrsSaintDelafield-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'CormorantSC';
+  src: local('CormorantSC'), url(./fonts/CormorantSC-Regular.ttf) format('truetype');
+}

@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+.topHeader {
+  margin: 50px;
+}
+.topHeader h1 {
+  font-family: 'MrsSaintDelafield';
+}
+
+.topHeader h5 {
+  font-family: 'CormorantSC';
+}
+
+.Home {
+  font-family: 'CormorantSC';
+}
+
+.Home Row {
+  margin-top: 50px;
+}

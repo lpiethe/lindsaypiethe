@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './fonts/MrsSaintDelafield-Regular.ttf';
+import './fonts/CormorantSC-Regular.ttf';
 
 ReactDOM.render(
   <React.StrictMode>
