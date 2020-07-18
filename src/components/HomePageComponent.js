@@ -9,19 +9,19 @@ class Home extends Component {
         <Col>
         <Card>
             {/* <CardTitle><h5>About</h5></CardTitle> */}
-            <a href='#'class = "column col-xs-6" id = "caption"><span class = "text"><h1>About</h1></span><CardImg src={require("../gaelle-marcel-AzodV2D0GLc-unsplash.jpg")} /></a>
+            <a href='#'className = 'column col-xs-6' id = 'caption'><span className = 'text'><h2>About</h2></span><CardImg src={require("../gaelle-marcel-AzodV2D0GLc-unsplash.jpg")} /></a>
         </Card>
         </Col>
         <Col>
         <Card>
             {/* <CardTitle><h5>Past Projects</h5></CardTitle> */}
-            <a href='#'><CardImg src={require("../melinda-gimpel-8_2K3ptM5oo-unsplash.jpg")} /></a>
+            <a href='#'className = 'column col-xs-6' id = 'caption'><span className = 'textWhite'><h2>Past Projects</h2></span><CardImg src={require("../melinda-gimpel-8_2K3ptM5oo-unsplash.jpg")} /></a>
         </Card>
         </Col>
         <Col>
         <Card>
             {/* <CardTitle><h5>Contact</h5></CardTitle> */}
-            <a href='#'><CardImg src={require("../coco-tafoya-EV_oX9Hf620-unsplash.jpg")} /></a>
+            <a href='#'className = 'column col-xs-6' id = 'caption'><span className = 'text'><h2>Contact</h2></span><CardImg src={require("../coco-tafoya-EV_oX9Hf620-unsplash.jpg")} /></a>
         </Card>
         </Col>
     </Row>

@@ -62,23 +62,39 @@
 }
 .column#caption .text {
       position: absolute;
-      top: 10%;     
+      top: 20%;     
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 10;
   opacity: 0;
   transition: all 0.8s ease;          
 }
-.column#caption .text h1 {      
+.column#caption .text h2 {      
       margin: 0;      
       color: black;
 }
+.column#caption .textWhite {
+  position: absolute;
+  top: 20%;     
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+opacity: 0;
+transition: all 0.8s ease;          
+}
+.column#caption .textWhite h2 {      
+  margin: 0;      
+  color: white;
+}
+.column#caption:hover .textWhite {
+  opacity: 1;
+}
+
 .column#caption:hover .text {
   opacity: 1;
-  
 }
 .column#caption:hover img {
-  opacity: 0,0,0,0.9;
-  background-color: gray;
+  -webkit-filter: grayscale(100%);
+  background-color: black;
 }
 
