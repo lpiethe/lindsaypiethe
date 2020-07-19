@@ -6,6 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './fonts/MrsSaintDelafield-Regular.ttf';
 import './fonts/CormorantSC-Regular.ttf';
+import 'font-awesome/css/font-awesome.css';
 
 ReactDOM.render(
   <React.StrictMode>

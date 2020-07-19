@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 class Footer extends Component {
@@ -6,7 +7,7 @@ class Footer extends Component {
         return(
             <div>
                 <hr></hr>
-                <i className="fa fa-copyright" aria-hidden="true"></i><p>All rights reserved. Web Design and Development by Lindsay Piethe</p>
+                <h6><i className="fa fa-copyright" aria-hidden="true"></i> All rights reserved. Web Design and Development by Lindsay Piethe</h6>
             </div>
         );
     }

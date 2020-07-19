@@ -4,14 +4,17 @@ import './App.css';
 import Header from './components/HeaderComponent';
 import Home from './components/HomePageComponent';
 import Footer from './components/FooterComponent';
+import { BrowserRouter } from 'react-router-dom';
 class App extends Component {
   render() {
     return (
-<div className='App'>
-  <Header />
-  <Home />
-  <Footer />
-</div>
+      <BrowserRouter>
+        <div className='App'>
+          <Header />
+          <Home />
+          <Footer />
+        </div>
+      </BrowserRouter>
     );
   }
 }
