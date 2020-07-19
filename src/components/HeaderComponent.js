@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Header extends Component {
     render() {
-        return ( 
+        return (
             <div className='topHeader'>
-            <h1>Lindsay Piethe</h1>
-            <h5 >FRONT END WEB DEVELOPER</h5>
+                <a href='/'>
+                    <h1>Lindsay Piethe</h1>
+                    <h5 >FRONT END WEB DEVELOPER</h5>
+                </a>
             </div>
+
+
         );
     }
 }

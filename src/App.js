@@ -1,22 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Navbar, NavbarBrand } from 'reactstrap';
 import './App.css';
-import Header from './components/HeaderComponent';
+import Main from './components/MainComponent';
 import Home from './components/HomePageComponent';
 import Footer from './components/FooterComponent';
 import { BrowserRouter } from 'react-router-dom';
-class App extends Component {
-  render() {
-    return (
-      <BrowserRouter>
-        <div className='App'>
-          <Header />
-          <Home />
-          <Footer />
-        </div>
-      </BrowserRouter>
-    );
-  }
+
+function App() {
+  return (
+    <div className="App">
+   <Main/>
+    </div>
+  );
 }
 
 export default App;

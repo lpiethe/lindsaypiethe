@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-image: linear-gradient(10deg, white 70%, #bb9999 calc(70% + 2px)) 
 }
 
 .App-logo {
@@ -38,15 +39,22 @@
 }
 
 .topHeader {
-  margin: 50px;
+  padding: 50px;
 }
 .topHeader h1 {
   font-family: 'MrsSaintDelafield';
 }
-
 .topHeader h5 {
   font-family: 'CormorantSC';
 }
+.topHeader a {
+  color: white;
+}
+.topHeader a:hover {
+  color: black;
+  text-decoration: none;
+}
+
 
 .Home {
   font-family: 'CormorantSC';
@@ -97,4 +105,16 @@ transition: all 0.8s ease;
   -webkit-filter: grayscale(100%);
   background-color: black;
 }
+.About {
+  
+}
 
+.aboutHello {
+  font-family: 'MrsSaintDelafield';
+  margin-top: 30px;
+}
+
+.aboutPicture {
+  margin: 30px;
+  border-radius: 50%;
+}
