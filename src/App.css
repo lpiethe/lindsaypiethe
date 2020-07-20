@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-image: linear-gradient(10deg, white 70%, #bb9999 calc(70% + 2px)) 
+  background-image: linear-gradient(10deg, white 70%, #f7efef calc(70% + 2px)) 
 }
 
 .App-logo {
@@ -39,16 +39,19 @@
 }
 
 .topHeader {
-  padding: 50px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  
 }
 .topHeader h1 {
   font-family: 'MrsSaintDelafield';
+  position: sticky;
 }
 .topHeader h5 {
   font-family: 'CormorantSC';
 }
 .topHeader a {
-  color: white;
+  color: black;
 }
 .topHeader a:hover {
   color: black;
@@ -61,7 +64,7 @@
 }
 
 .Home Row {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 /* CSS for the hover text on home page */
@@ -70,7 +73,7 @@
 }
 .column#caption .text {
       position: absolute;
-      top: 20%;     
+      margin-top: 150px;    
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 10;
@@ -83,7 +86,7 @@
 }
 .column#caption .textWhite {
   position: absolute;
-  top: 20%;     
+  margin-top: 150px;     
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
@@ -91,7 +94,7 @@ opacity: 0;
 transition: all 0.8s ease;          
 }
 .column#caption .textWhite h2 {      
-  margin: 0;      
+  margin-top: 10px;      
   color: white;
 }
 .column#caption:hover .textWhite {
@@ -110,11 +113,44 @@ transition: all 0.8s ease;
 }
 
 .aboutHello {
-  font-family: 'MrsSaintDelafield';
+  font-family: 'CormorantSC';
   margin-top: 30px;
+  text-align: left;
+  text-decoration: none;
 }
 
 .aboutPicture {
   margin: 30px;
   border-radius: 50%;
+}
+
+.input-group-btn a {
+  background-color: gray;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  transition: all .2s ease-in-out
+}
+.input-group-btn {
+  transition: all .2s ease-in-out
+}
+.input-group-btn :hover { 
+  color:white;
+  transform: scale(1.1); 
+}
+
+.contact {
+  font-family: CormorantSC;
+}
+.socialLinks a {
+  color:black;
+}
+
+.socialLinks :hover {
+  color:black;
+}
+
+.Form {
+  width: 50%;
+  margin: auto;
 }
