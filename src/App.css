@@ -154,3 +154,6 @@ transition: all 0.8s ease;
   width: 50%;
   margin: auto;
 }
+.previousWork {
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
