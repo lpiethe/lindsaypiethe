@@ -6,15 +6,12 @@ class Projects extends Component {
             <Container className='About'>
             <Row>
                 <Col xs='6' className='previousWork'>
-                    <img src={require("../AboutPicture.png")} width='400' height='400' className='aboutPicture' />
+                    <img src={require("../LindsayPDesignsReactMain.png")} width='550' height='700'  />
                 </Col>
                 <Col xs='6' className='previousWork'>
-                    <img src={require("../AboutPicture.png")} width='400' height='400' className='aboutPicture' />
+                    <img src={require("../ThreeSistersMain.png")} width='550' height='700'  />
                 </Col>
-                <Col xs='6' className='previousWork'>
-                    <img src={require("../AboutPicture.png")} width='400' height='400' className='aboutPicture' />
-                </Col>
-                </Row>
+            </Row>
                 </Container>
         );
     }

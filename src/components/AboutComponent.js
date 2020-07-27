@@ -8,7 +8,6 @@ class About extends Component {
         this.state = {
             isModalOpen: false,
             value: 0,
-            startDate: new Date()
         };
         this.toggleModal = this.toggleModal.bind(this);
     }

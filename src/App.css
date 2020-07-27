@@ -108,8 +108,36 @@ transition: all 0.8s ease;
   -webkit-filter: grayscale(100%);
   background-color: black;
 }
-.About {
+
+.topHeaderWhite {
+      margin-top: 120px;    
+      transition: all 0.8s ease; 
+}
+.topHeaderWhite:hover {
+      transform: scale(1.2);
+      background-color:#f7efef; 
+      color: black;
+}
+.topHeaderWhite h4 {    
+      color: white;
+}
+
+.topHeaderWhite h4:hover{    
+  color: black;
+}
+
+.topHeaderBlack {
+     
+  margin-top: 120px;    
+  transition: all 0.8s ease; 
+}
+.topHeaderBlack:hover {
   
+  transform: scale(1.2);
+  background-color:#f7efef; 
+}
+.topHeaderBlack h4 {    
+  color: black;
 }
 
 .aboutHello {
@@ -156,4 +184,9 @@ transition: all 0.8s ease;
 }
 .previousWork {
   box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+ margin-top:20px;
+}
+
+.About {
+
 }
