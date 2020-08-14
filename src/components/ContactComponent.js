@@ -8,7 +8,7 @@ class Contact extends Component {
                 <Row>
                     <Col className="contact">
                     <h3>Contact Me</h3>
-                        <Form className='Form'>
+                        {/* <Form className='Form'>
                         <FormGroup>
                             <Label for='name'></Label>
                             <Input type='name' id='name' placeholder='name' />
@@ -17,18 +17,22 @@ class Contact extends Component {
                             <Label for='email'></Label>
                             <Input type='email' id='email' placeholder='email' />
                         </FormGroup>
-                        </Form>
+                        </Form> */}
                     </Col>
                 </Row>
                 <Row className='socialLinks'>
                     <Col>
-                        <a href='gmail.com'><i className="fa fa-envelope" aria-hidden="true"></i></a>
+                   <h5><a href='gmail.com'>lpiethe@gmail.com</a></h5>
                     </Col>
+                    </Row>
+                    <Row className='socialLinks'>
                     <Col>
-                        <a href='github.com'><i className="fa fa-github" aria-hidden="true"></i></a>
+                        <h5><a href='github.com/lpiethe'>GitHub</a></h5>
                     </Col>
+                    </Row>
+                    <Row className='socialLinks'>
                     <Col>
-                        <a href='linkedin.com'><i className="fa fa-linkedin" aria-hidden="true"></i></a>
+                       <h5><a href='https://www.linkedin.com/in/lindsay-piethe-459b2810/'>LinkedIn</a></h5>
                     </Col>
                 </Row>
             </Container>

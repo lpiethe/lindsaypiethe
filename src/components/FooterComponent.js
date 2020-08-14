@@ -7,7 +7,7 @@ class Footer extends Component {
         return(
             <div>
                 <hr></hr>
-                <h6><i className="fa fa-copyright" aria-hidden="true"></i> All rights reserved. Web Design and Development by Lindsay Piethe</h6>
+                <h6><i className="fa fa-copyright" aria-hidden="true"></i> Web Design and Development by Lindsay Piethe</h6>
             </div>
         );
     }

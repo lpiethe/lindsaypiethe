@@ -22,10 +22,10 @@ class About extends Component {
         return (
             <Container className='About'>
                 <Row>
-                    <Col xs='6' className='aboutPicture'>
-                        <img src={require("../AboutPicture.png")} width='400' height='400' className='aboutPicture' />
+                    <Col   className='aboutPicture'>
+                        <img src={require("../AboutPicture.png")} width='75%'  className='aboutPicture' />
                     </Col>
-                    <Col className='aboutHello'>
+                    <Col sm ='6' md='6' className='aboutHello'>
                         <h1 style={{ fontSize: '30px', textAlign: 'left' }}>Who I am</h1>
                         <p> My name is Lindsay Piethe. I'm a web designer and developer in the state of Washington .</p>
                         <h1 style={{ fontSize: '30px', textAlign: 'left' }}>Technical Skills</h1>
