@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  background-image: linear-gradient(10deg, white 70%, #f7efef calc(70% + 2px)) 
+  background-image: linear-gradient(10deg, white 70%, #f7efef calc(70% + 2px));
+  background-attachment: fixed;
 }
 
 .App-logo {
@@ -109,17 +110,19 @@ transition: all 0.8s ease;
   background-color: black;
 }
 
-.topHeaderWhite {
+.topHeaderBlack {
       margin-top: 120px;    
       transition: all 0.8s ease; 
-      background-color:#f7efef; 
+      background-color:white; 
+      margin-right: -25px;
+      margin-left: -25px;
 }
-.topHeaderWhite:hover {
+.topHeaderBlack:hover {
       transform: scale(1.2);
-      background-color:#f7efef; 
+      background-color:white; 
       color: black;
 }
-.topHeaderWhite h4 {    
+.topHeaderBlack h4 {    
       color: black;
       font-size: 26px;
 }
@@ -128,25 +131,6 @@ transition: all 0.8s ease;
   .topHeaderWhite h4 {
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
   }
-}
-
-.topHeaderWhite h4:hover{    
-  color: black;
-}
-
-.topHeaderBlack {
-     
-  margin-top: 120px;    
-  transition: all 0.8s ease; 
-}
-.topHeaderBlack:hover {
-  
-  transform: scale(1.2);
-  background-color:#f7efef; 
-}
-.topHeaderBlack h4 {    
-  color: black;
-  font-size: 26px ;
 }
 
 @media screen and (min-width: 320px) {
@@ -189,14 +173,15 @@ transition: all 0.8s ease;
 
 .socialLinks {
   font-family: CormorantSC;
+justify-content: center;
 }
 .socialLinks a {
   color:black;
 }
 
 .socialLinks :hover {
-  color:black;
-  font-family: CormorantSC;
+  color:rgb(175, 172, 172);
+ 
 }
 
 .Form {
@@ -205,9 +190,42 @@ transition: all 0.8s ease;
 }
 .previousWork {
   box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
- margin-top:20px;
+  margin-top:50px;
 }
 
-.About {
+.image{
+  transition: .5s ease;
+  backface-visibility: hidden;
+  opacity: 1;
+}
 
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.previousWork:hover .image {
+  opacity: 0.3;
+}
+
+.previousWork:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: rgb(102, 101, 101);
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  font-family: CormorantSC;
+}
+
+.footer {
+ padding:30px;
 }

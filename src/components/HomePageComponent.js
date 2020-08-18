@@ -7,19 +7,7 @@ class Home extends Component {
         return(
 <Container className='Home'>
     <Row>
-        <Col>
-        <Card>
-            <Link to='About'>
-                {/* <a href='#'className = 'column col-xs-6' id = 'caption'> */}
-                {/* <span className = 'text'><h2>About</h2></span> */}
-                <CardImg src={require("../gaelle-marcel-AzodV2D0GLc-unsplash.jpg")} />
-                <CardImgOverlay>
-                <CardTitle className='topHeaderBlack'><h4>ABOUT</h4></CardTitle>
-                </CardImgOverlay>
-                {/* </a> */}
-            </Link>
-        </Card>
-        </Col>
+        
         <Col>
         <Card>
             <Link to='Projects'>
@@ -29,7 +17,20 @@ class Home extends Component {
                     </span> */}
                 <CardImg src={require("../melinda-gimpel-8_2K3ptM5oo-unsplash.jpg")} />
                 <CardImgOverlay>
-                <CardTitle className='topHeaderWhite'><h4>PAST PROJECTS</h4></CardTitle>
+                <CardTitle className='topHeaderBlack'><h4>PAST PROJECTS</h4></CardTitle>
+                </CardImgOverlay>
+                {/* </a> */}
+            </Link>
+        </Card>
+        </Col>
+        <Col>
+        <Card>
+            <Link to='About'>
+                {/* <a href='#'className = 'column col-xs-6' id = 'caption'> */}
+                {/* <span className = 'text'><h2>About</h2></span> */}
+                <CardImg src={require("../gaelle-marcel-AzodV2D0GLc-unsplash.jpg")} />
+                <CardImgOverlay>
+                <CardTitle className='topHeaderBlack'><h4>ABOUT</h4></CardTitle>
                 </CardImgOverlay>
                 {/* </a> */}
             </Link>
