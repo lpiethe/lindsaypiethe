@@ -6,6 +6,7 @@ import About from './AboutComponent';
 import Projects from './ProjectsComponent';
 import Home from './HomePageComponent';
 import Contact from './ContactComponent';
+import NavBar from './NavBarComponent';
 
 class Main extends Component {
     render() {
@@ -20,6 +21,7 @@ class Main extends Component {
             <Router>
 
             <div>
+                <NavBar />
                <Header/>
                     <Switch>
                 <Route exact path="/About" component={About}/>

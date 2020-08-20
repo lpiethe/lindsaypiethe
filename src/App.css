@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-image: linear-gradient(10deg, white 70%, #f7efef calc(70% + 2px));
+  background-image: linear-gradient(10deg, white 70%, #eeedecf5 calc(70% + 2px));
   background-attachment: fixed;
 }
 
@@ -40,12 +40,11 @@
 }
 
 .topHeader {
-  padding-top: 60px;
-  padding-bottom: 30px;
-  
+  padding: 30px;
 }
+
 .topHeader h1 {
-  font-family: 'MrsSaintDelafield';
+  font-family: 'MrsSaintDelafield'; 
   position: sticky;
 }
 .topHeader h5 {
@@ -59,7 +58,6 @@
   text-decoration: none;
 }
 
-
 .Home {
   font-family: 'CormorantSC';
 }
@@ -68,57 +66,18 @@
   margin-top: 40px;
 }
 
-/* CSS for the hover text on home page */
-.column#caption {
-  position: relative;
-}
-.column#caption .text {
-      position: absolute;
-      margin-top: 150px;    
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 10;
-  opacity: 0;
-  transition: all 0.8s ease;          
-}
-.column#caption .text h2 {      
-      margin: 0;      
-      color: black;
-}
-.column#caption .textWhite {
-  position: absolute;
-  margin-top: 150px;     
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-opacity: 0;
-transition: all 0.8s ease;          
-}
-.column#caption .textWhite h2 {      
-  margin-top: 10px;      
-  color: white;
-}
-.column#caption:hover .textWhite {
-  opacity: 1;
-}
-
-.column#caption:hover .text {
-  opacity: 1;
-}
-.column#caption:hover img {
-  -webkit-filter: grayscale(100%);
-  background-color: black;
+.homecard {
+  opacity: 0.9;
 }
 
 .topHeaderBlack {
-      margin-top: 120px;    
+      margin-top: 36px;
       transition: all 0.8s ease; 
-      background-color:white; 
-      margin-right: -25px;
-      margin-left: -25px;
+      margin-right: -20px;
+      margin-left: -20px;
 }
 .topHeaderBlack:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
       background-color:white; 
       color: black;
 }
@@ -193,14 +152,16 @@ justify-content: center;
   margin-top:50px;
 }
 
+/* CSS for the hover text on past project page */
+
 .image{
-  transition: .5s ease;
+  transition: 3s ease;
   backface-visibility: hidden;
   opacity: 1;
 }
 
 .middle {
-  transition: .5s ease;
+  transition: 2s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -212,6 +173,7 @@ justify-content: center;
 
 .previousWork:hover .image {
   opacity: 0.3;
+  transition: 5s ease;
 }
 
 .previousWork:hover .middle {
@@ -226,6 +188,80 @@ justify-content: center;
   font-family: CormorantSC;
 }
 
+.homeCard:hover .image {
+  opacity: 0.3;
+  transition: .2s ease;
+}
+
+.homeCard:hover .middleHome {
+  opacity: 1;
+}
+
+.hometext {
+  color:black;
+  margin-top: 50%;
+  font-family: MrsSaintDelafield;
+}
+
+.hometext h4 {
+  font-size: 50px;
+}
+
+
+.middleHome {
+  transition: 0.2s;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+}
+
 .footer {
  padding:30px;
+}
+
+.FadeItems {
+  animation: fadeInAnimation ease 2s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
+}
+@keyframes fadeInAnimation { 
+  0% { 
+      opacity: 0; 
+  } 
+  100% { 
+      opacity: 1; 
+  } 
+} 
+
+ul {
+  
+  text-align: left;
+}
+.youtubeLink {
+  color: white;
+}
+
+.youtubeLink :hover {
+  color:black;
+  text-decoration: none;
+}
+
+.projectHeader {
+  font-family: CormorantSC;
+}
+
+.navlink  {
+  color: rgb(99, 99, 99);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-left: 250px;
+  margin-bottom: 20px;
+}
+
+.navlink :hover {
+  color: black;
+}
+
+.Navigation {
+  justify-content: center;
+
 }

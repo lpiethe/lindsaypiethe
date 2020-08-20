@@ -4,7 +4,7 @@ import { Container, Col, Row, Form, FormGroup, Label, Input, Button } from 'reac
 class Contact extends Component {
     render() {
         return (
-            <Container>
+            <Container className='FadeItems'>
                 <Row>
                     <Col className="contact">
                     <h3>Get in Touch!</h3>
@@ -18,7 +18,9 @@ class Contact extends Component {
                             <Input type='phoneNumber' id='phoneNumber' placeholder='Phone Number' />
                             <Label for='text'></Label>
                             <Input type='textarea' id='text' placeholder='Reason for Inquiry'/>
-                            <Button style={{margin:'10px'}}>Send!</Button>
+                            <Button 
+                                style={{margin:'10px'}}
+                            >Send!</Button>
                         </FormGroup>
                         </Form>
                     </Col>
