@@ -8,7 +8,7 @@ class Projects extends Component {
             <Container className='FadeItems'>
                 <Row>
                     <Col className='projectHeader'>
-                    <h3>Most Recent Web Design/Development Projects</h3>
+                    <h4>Most Recent Web Design/Development Projects</h4>
                     </Col>
                 </Row>
             <Row>
@@ -23,7 +23,7 @@ class Projects extends Component {
                                         <li>React Native Elements</li>
                                         <li>Bootstrap</li>
                                     </ul>
-                                <a href='youtube.com' className='youtubeLink' target='_blank'><h6>Watch the video!</h6></a>
+                                <a href='https://youtu.be/-TuL5YX_a9E' className='youtubeLink' target='_blank'><h5>Watch the video!</h5></a>
                             </div>      
                         </div>
                 </Col>
@@ -39,7 +39,7 @@ class Projects extends Component {
                                         <li>Bootstrap</li>
                                         <li>Node.js</li>
                                     </ul>
-                                <a href='youtube.com' className='youtubeLink' target='_blank'><h6>Watch the video!</h6></a>
+                                <a href='https://youtu.be/yZ-CexC3hXM' className='youtubeLink' target='_blank'><h5>Watch the video!</h5></a>
                             </div>
                         </div>   
                 </Col>

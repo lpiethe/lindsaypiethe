@@ -8,7 +8,7 @@ class Header extends Component {
                 <a href='/'>
                     <h1>Lindsay Piethe</h1>
                     <h5 >FRONT END WEB DEVELOPER</h5>
-                    <hr></hr>
+                   
                 </a>
             </div>
 

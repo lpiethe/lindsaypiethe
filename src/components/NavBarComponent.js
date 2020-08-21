@@ -21,8 +21,8 @@ class NavBar extends Component {
             <React.Fragment>
                 <Navbar expand="xl" className='Navigation'>
                 <NavbarToggler onClick={this.toggleNav} color='dark'/>
-                     <Collapse isOpen={this.state.isNavOpen} navbar color='dark'>
-                         <Nav className='mr-auto' navbar>
+                    <Collapse isOpen={this.state.isNavOpen} navbar color='dark'>
+                        <Nav className='mr-auto' navbar>
                              <NavItem>
                                  <NavLink href='/' className='navlink'>Home</NavLink>
                              </NavItem>
@@ -30,23 +30,12 @@ class NavBar extends Component {
                                  <NavLink href='./projects' className='navlink'>Portfolio</NavLink>
                              </NavItem>
                              <NavItem>
-                                 <NavLink href='./about' className='navlink'>About</NavLink>
+                                 <NavLink className='navlink' href='./about'>About</NavLink>
                              </NavItem>
                              <NavItem>
                                  <NavLink href='./contact' className='navlink'>Contact</NavLink>
                              </NavItem>
-                    {/* <div className='Navbarlinks'>
-                            <Link to="About">
-                                <li>Home</li>
-                            </Link>
-                            <Link to="Work">
-                                <li>About</li>
-                            </Link>
-                            <Link to="Services">
-                                <li>Contact</li>
-                            </Link>
-                    </div> */}
-                    </Nav>
+                        </Nav>
                     </Collapse>
                 </Navbar> 
             </React.Fragment>

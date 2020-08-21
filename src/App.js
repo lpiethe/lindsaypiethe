@@ -6,6 +6,7 @@ import Home from './components/HomePageComponent';
 import Footer from './components/FooterComponent';
 import { BrowserRouter } from 'react-router-dom';
 
+
 function App() {
   return (
     <div className="App FadeItems">
