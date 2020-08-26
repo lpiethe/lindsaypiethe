@@ -8,23 +8,19 @@ class Contact extends Component {
         this.state = {
             contactName: '',
             email: '',
-            phoneNumber: '',
             touched: {
                 contactName: false,
                 email: false,
-                phoneNumber: false
             }
         };
         this.handleInputChange = this.handleInputChange.bind(this);
     }
 
-    validate(contactName, email, phoneNumber) {
+    validate(contactName, email) {
 
         const errors = {
             contactName: '',
             email: '',
-            subject: '',
-            message: ''
         };
 
         if (this.state.touched.contactName) {
@@ -40,7 +36,6 @@ class Contact extends Component {
         if (this.state.touched.email && !email.includes('@')) {
             errors.email = 'Email should contain a @';
         }
-
         return errors;
     }
 
@@ -61,9 +56,7 @@ class Contact extends Component {
         });
     }
     
-    handleButton = () => {
-        alert('Thank you for submitting your information. Someone will reach out to you within 24 hours.');
-      } 
+   
 
    sendEmail(e) {
     e.preventDefault();
@@ -75,6 +68,8 @@ class Contact extends Component {
             console.log(error.text);
         });
         e.target.reset()
+
+alert('Your message has been sent!');
     }
     render() {
         const errors = this.validate(this.state.contactName, this.state.email);
@@ -92,6 +87,7 @@ class Contact extends Component {
                                 id='contactName' 
                                 placeholder='Name'
                                 value={this.state.contactName} 
+                                invalid={errors.contactName}
                                 onBlur={this.handleBlur("contactName")}
                                 onChange={this.handleInputChange}
                                 />
@@ -105,6 +101,7 @@ class Contact extends Component {
                                 id='email' 
                                 placeholder='Email'
                                 value={this.state.email} 
+                                invalid={errors.email}
                                 onBlur={this.handleBlur("email")}
                                 onChange={this.handleInputChange}
                                 />
@@ -121,7 +118,7 @@ class Contact extends Component {
                                 onBlur={this.handleBlur("subject")}
                                 onChange={this.handleInputChange}
                                 />
-                            <FormFeedback>{errors.subject}</FormFeedback>
+                          
                         </FormGroup>
                         <FormGroup>
                             <Label for='message'></Label>
@@ -134,7 +131,6 @@ class Contact extends Component {
                                 onBlur={this.handleBlur("message")}
                                 onChange={this.handleInputChange}
                                 />
-                            <FormFeedback>{errors.message}</FormFeedback>
                         </FormGroup>
                          <Input type='submit' className='btn btn-secondary' value="Send Message"></Input>
                         </Form>
