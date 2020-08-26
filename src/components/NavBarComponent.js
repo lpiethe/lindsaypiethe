@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Navbar, NavbarToggler, Collapse, NavLink, NavItem, Nav} from 'reactstrap';
+import {Navbar, NavbarToggler, Collapse, NavLink, NavItem, Container} from 'reactstrap';
 
 class NavBar extends Component {
     constructor(props){
@@ -18,10 +18,10 @@ class NavBar extends Component {
     render() {
         return (
             <React.Fragment>
-                <Navbar expand="xl" className='Navigation'>
-                <NavbarToggler onClick={this.toggleNav} color='dark'/>
-                    <Collapse isOpen={this.state.isNavOpen} navbar color='dark'>
-                        <Nav className='mr-auto' navbar>
+                <Navbar  color='faded' light expand='md'>
+                <NavbarToggler onClick={this.toggleNav} className="mr-2"/>
+                    <Collapse isOpen={this.state.isNavOpen} navbar>
+                        <Container className='Navigation'>
                              <NavItem>
                                  <NavLink href='/' className='navlink'>Home</NavLink>
                              </NavItem>
@@ -34,7 +34,7 @@ class NavBar extends Component {
                              <NavItem>
                                  <NavLink href='./contact' className='navlink'>Contact</NavLink>
                              </NavItem>
-                        </Nav>
+                        </Container>
                     </Collapse>
                 </Navbar> 
             </React.Fragment>

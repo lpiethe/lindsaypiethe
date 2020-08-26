@@ -255,15 +255,21 @@ ul {
 .navlink  {
   color: rgb(99, 99, 99);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  margin-left: 250px;
-  margin-bottom: 50px;
+  width: 100%;
+  list-style-type: none;
 }
 
 .navlink:hover {
   color: black;
-  text-decoration: underline;
 }
 
 .Navigation {
   justify-content: center;
+  max-width: 480px;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+.navitem {
+  list-style-type: none;
 }
