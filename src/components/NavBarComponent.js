@@ -26,13 +26,13 @@ class NavBar extends Component {
                                  <NavLink href='/' className='navlink'>Home</NavLink>
                              </NavItem>
                              <NavItem>
-                                 <NavLink href='./projects' className='navlink'>Portfolio</NavLink>
+                                 <NavLink href='/projects' className='navlink'>Portfolio</NavLink>
                              </NavItem>
                              <NavItem>
-                                 <NavLink className='navlink' href='./about'>About</NavLink>
+                                 <NavLink className='navlink' href='/about'>About</NavLink>
                              </NavItem>
                              <NavItem>
-                                 <NavLink href='./contact' className='navlink'>Contact</NavLink>
+                                 <NavLink href='/contact' className='navlink'>Contact</NavLink>
                              </NavItem>
                         </Container>
                     </Collapse>
