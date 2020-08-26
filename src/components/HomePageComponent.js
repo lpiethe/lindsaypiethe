@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Col, Row, Container, Card, CardBody, CardTitle, CardImg, CardImgOverlay } from 'reactstrap';
+import { Col, Row, Container, Card, CardTitle, CardImg, CardImgOverlay } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 class Home extends Component {

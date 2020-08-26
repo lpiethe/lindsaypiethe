@@ -23,7 +23,7 @@ class About extends Component {
             <Container className='About FadeItems'>
                 <Row>
                     <Col   className='aboutPicture'>
-                        <img src={require("../AboutPicture.png")} width='75%'  className='aboutPicture' />
+                        <img src={require("../AboutPicture.png")} width='75%'  className='aboutPicture'  alt='family'/>
                     </Col>
                     <Col sm ='6' md='6' className='aboutHello'>
                         <h1 style={{ fontSize: '30px', textAlign: 'left' }}>Who I am</h1>

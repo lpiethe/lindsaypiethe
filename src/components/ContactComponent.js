@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Col, Row, Form, FormGroup, Label, Input, Button, FormFeedback } from 'reactstrap';
+import { Container, Col, Row, Form, FormGroup, Label, Input, FormFeedback } from 'reactstrap';
 import emailjs from 'emailjs-com';
 
 class Contact extends Component {
@@ -32,7 +32,7 @@ class Contact extends Component {
         }
 
 
-        const reg = /^\d+$/;
+        
         if (this.state.touched.email && !email.includes('@')) {
             errors.email = 'Email should contain a @';
         }

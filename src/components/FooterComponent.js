@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Row, Col,} from 'reactstrap';
+import {Row} from 'reactstrap';
 
 
 class Footer extends Component {
@@ -9,7 +9,7 @@ class Footer extends Component {
             <div>
                 <hr></hr>
                 <Row className='socialLinks' > 
-                <a href='http://www.github.com/lpiethe' target='_blank'><i class="fa fa-github" aria-hidden="true" style={{padding:'10px'}}></i></a>
+                <a href='http://www.github.com/lpiethe' target='_blank' alt='githublink'><i class="fa fa-github" aria-hidden="true" style={{padding:'10px'}}></i></a>
                 <a href='mailto:lpiethe@gmail.com' target='_blank'><i class="fa fa-envelope" aria-hidden="true"style={{padding:'10px'}}></i></a>
                 <a href='https://www.linkedin.com/in/lindsay-piethe-459b2810/' target='_blank'><i class="fa fa-linkedin" aria-hidden="true"style={{padding:'10px'}}></i></a>
                 </Row>
