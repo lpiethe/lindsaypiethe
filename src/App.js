@@ -4,7 +4,13 @@ import Main from './components/MainComponent';
 import ReactGA from 'react-ga';
 
 
+function initializeReactGA() {
+  ReactGA.initialize('UA-181329362-1');
+  ReactGA.pageview('/homepage');
+}
+
 function App() {
+  initializeReactGA()
   return (
     <div className="App FadeItems">
    <Main/>
@@ -12,9 +18,6 @@ function App() {
   );
 }
 
-function initializeReactGA() {
-  ReactGA.initialize('UA-250470396');
-  ReactGA.pageview('/home');
-}
+
 
 export default App;
