@@ -46,7 +46,7 @@ class About extends Component {
 
                         <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
                             <div>
-                                <img src={require("../Lindsay Piethe- Resume for website.png")} width='100%' className='resume' />
+                                <img src={require("../Lindsay Piethe Resume.png")} width='100%' className='resume' />
                             </div>
                         </Modal>
 
