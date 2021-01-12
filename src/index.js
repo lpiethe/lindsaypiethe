@@ -8,6 +8,8 @@ import './fonts/MrsSaintDelafield-Regular.ttf';
 import './fonts/CormorantSC-Regular.ttf';
 import 'font-awesome/css/font-awesome.css';
 
+
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
